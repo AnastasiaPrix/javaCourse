@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String s = "Предложение     один   Теперь     предложение    два   Тут  предложение          три";
+        String s = "Предложение     один   Теперь     предложение    два   Тут  предложение          три     Здесь четыре";
 
-        guessValue();
-        guessWord();
+//        guessValue();
+//        guessWord();
         normalize(s);
 
 
