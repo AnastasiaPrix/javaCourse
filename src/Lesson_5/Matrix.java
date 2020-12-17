@@ -43,10 +43,10 @@ public class Matrix {
                 num = num +1;
             }
             if (flag) {
-                k = increaseX(flagChange,  SIZE_act, k, flagChange, minus);
+                k = increaseX(flagChange,  SIZE_act, k, minus);
             }
             else {
-                k = increaseY(flagChange,  SIZE_act, k, flagChange, minus);
+                k = increaseY(flagChange,  SIZE_act, k,  minus);
             }
             coun++;
             flag = !flag;
@@ -55,7 +55,7 @@ public class Matrix {
             }
         }
     }
-    private int increaseX(boolean flag, int SIZE_act, int k, boolean fl, int minus){
+    private int increaseX(boolean flag, int SIZE_act, int k, int minus){
         if (!flag) {
             for (int j = minus; j < SIZE_act +minus; j++) {
                 mas[num][j] = k;
@@ -78,7 +78,7 @@ public class Matrix {
         }
         return k;
     }
-    private int increaseY(boolean flag, int SIZE_act, int k , boolean fl, int minus){
+    private int increaseY(boolean flag, int SIZE_act, int k,  int minus){
         if (!flag) {
             for (int j = minus; j < SIZE_act + minus; j++) {
                 mas[j][num] = k;
