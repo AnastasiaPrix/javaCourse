@@ -17,5 +17,14 @@ public class Main {
                 i.info();
             }
         }
+
+
+        // Экземпляр класса
+        Matrix matrix = new Matrix();
+
+        // zapolnenie
+        matrix.spiral();
+        // вывод
+        matrix.printMatrix();
     }
 }
